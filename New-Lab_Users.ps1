@@ -1,6 +1,7 @@
 $password = Read-Host "Temporary password for new users" -AsSecureString
 
-$users = Import-Csv .\users.csv 
+$users = Import-Csv .\users.csv
+$results = @() 
 foreach ($row in $users) {
     Write-Host $row.FirstName
     $first = $row.FirstName
@@ -34,7 +35,6 @@ foreach ($row in $users) {
     catch {
         Write-Host "Failed: $($_.Exception.Message)" -ForegroundColor Red 
     }
-    $results = @()
     $results += [PSCustomObject]@{
         Username = $username
         Status = "Created"
