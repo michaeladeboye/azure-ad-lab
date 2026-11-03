@@ -1,5 +1,5 @@
 # Azure Active Directory Lab
-An Active Directory domain controller with group policy objects and a Powershell user provisioning script to automate new user onboarding.
+A small company network: Active Directory domain controller with group policy objects and a Powershell user provisioning script.
 
 I built this to practice the Windows and AD admin work done in IT Operations.
 
@@ -25,10 +25,10 @@ flowchart LR
 - Azure: Cloud used to host the lab
 - Resource Group (rg-adlab): Folder holding every piece of the lab
 - Virtual Network(vnet-adlab): Private network used by the VMs
-- DC01 (Domain Controller): The sever running Active Directory
-- WS01: Admin workstation and employee computer
-- GPOs:
-- Powershell Script:
+- DC01 (Domain Controller): The sever running Active Directory in the lab
+- WS01: Admin workstation and employee computer for the lab
+- GPOs: Rules I defined in the domain controller that pushed to machines and users
+- Powershell Script: Automates new user onboarding
 
 ## AD structure
 
