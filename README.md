@@ -3,7 +3,7 @@ An Active Directory domain controller with group policy objects and a Powershell
 
 I built this to practice the Windows and AD admin work done in IT Operations.
 
-## Architecture:
+## Architecture
 
 ```mermaid
 flowchart LR
@@ -20,3 +20,24 @@ flowchart LR
     bastion -->|RDP| ws
     ws -->|DNS, Kerberos, LDAP, SMB, WinRM| dc
 ```
+
+## Build Summary
+- Azure: Cloud used to host the lab
+- Resource Group (rg-adlab): Folder holding every piece of the lab
+- Virtual Network(vnet-adlab): Private network used by the VMs
+- DC01 (Domain Controller): The sever running Active Directory
+- WS01: Admin workstation and employee computer
+- GPOs:
+- Powershell Script:
+
+## AD structure
+
+## Group Policy
+
+## Lockout Test
+
+## Provisioning Script
+
+## Troubleshooting
+
+## Cost + Security Choices
