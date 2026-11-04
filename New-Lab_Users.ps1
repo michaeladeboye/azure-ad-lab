@@ -1,3 +1,5 @@
+#Powershell Script that automates that automates new user onboarding
+
 $password = Read-Host "Temporary password for new users" -AsSecureString
 
 $users = Import-Csv .\users.csv
