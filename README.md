@@ -31,6 +31,13 @@ flowchart LR
 - Powershell Script: Automates new user onboarding
 
 ## AD structure
+- **Organizational Units:**
+- Departments
+-     IT
+-     Finance
+-     HR
+- Groups:
+- 
 
 ## Group Policy
 
