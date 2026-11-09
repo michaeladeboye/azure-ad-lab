@@ -1,10 +1,10 @@
-  FirstName,LastName,Department,Title
-  Ava,Martinez,IT,Help Desk Technician
-  Jack, Johnson, Finance, Financial Analyst
-  Harry, Greb, HR, Recruiting Manager
-  Ezzard, Charles, IT, System Administrator
-  Joe, Lewis, Finance, Finacial Analyst
-  Max, Schmelling, Marketing, Marketing Director
-  Gene, Tunney, IT, Information Security Analyst
-  Harry, Greb, HR, Recruiting Manager
-  Jack, Dempsey, IT, IT Operations Engineer
+FirstName,LastName,Department,Title
+Ava,Martinez,IT,Help Desk Technician
+Jack,Johnson,Finance,Financial Analyst
+Harry,Greb,HR,Recruiting Manager
+Ezzard,Charles,IT,System Administrator
+Joe,Lewis,Finance,Financial Analyst
+Max,Schmelling,Marketing,Marketing Director
+Gene,Tunney,IT,Information Security Analyst
+Harry,Greb,HR,Recruiting Manager
+Jack,Dempsey,IT,IT Operations Engineer
