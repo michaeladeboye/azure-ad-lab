@@ -10,7 +10,7 @@ flowchart LR
     mac["My Mac (browser)"] -->|HTTPS| bastion["Azure Bastion<br/>Developer tier"]
 
     subgraph azure["Azure: rg-adlab"]
-        subgraph vnet["vnet-adlab 10.0.0.0/16, subnet 10.0.0.0/24."]
+        subgraph vnet["vnet-adlab 10.0.0.0/16, subnet 10.0.0.0/24"]
             dc["DC01<br/>Server Core<br/>AD DS + DNS<br/>10.0.0.4"]
             ws["WS01<br/>Admin workstation<br/>RSAT + GPMC"]
         end
