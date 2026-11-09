@@ -10,7 +10,7 @@ flowchart LR
     mac["My Mac (browser)"] -->|HTTPS| bastion["Azure Bastion<br/>Developer tier"]
 
     subgraph azure["Azure: rg-adlab"]
-        subgraph vnet["vnet-adlab 10.0.0.0/16 /24"]
+        subgraph vnet["vnet-adlab 10.0.0.0/16, subnet 10.0.0.0/24."]
             dc["DC01<br/>Server Core<br/>AD DS + DNS<br/>10.0.0.4"]
             ws["WS01<br/>Admin workstation<br/>RSAT + GPMC"]
         end
@@ -60,7 +60,7 @@ flowchart LR
 ## Provisioning Script
 - The PowerShell provisioning script reads a file called `users.csv` that has each person's name, department and title. It then creates each user in their department’s OU, adds them to the department group, and sets a temporary password they must change at first login. It skips users who already exist and logs what it did
 - Run the script on a domain-joined machine with the AD tools installed, as a domain admin
-  CSV columns: `FirstName,LastName,Department,Title`
+- CSV columns: `FirstName,LastName,Department,Title`
 
   ```powershell
   .\New-LabUsers.ps1
