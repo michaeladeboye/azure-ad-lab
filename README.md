@@ -1,4 +1,4 @@
-# Azure Active Directory Lab
+# Active Directory Lab in Azure
 A small company network: Active Directory domain controller with group policy objects and a Powershell user provisioning script.
 
 I built this to practice the Windows and AD admin work done in IT Operations.
