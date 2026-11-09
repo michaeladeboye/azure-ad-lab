@@ -74,6 +74,5 @@ flowchart LR
 - Tracked down the hidden Azure region policy which did not allow me to deploy the virtual network because I was in the wrong region for my subscription
 - Chose B2als_v2 for its 4 GB of RAM
 - System error 1219 ("Multiple connections to a server or shared resource by the same user, using more than one user name, are not allowed") came up when attempting to test the lockout,causing bad passwords to not be checked. Fixed this by targeting the domain controller's IP
-![2nd run output](azure-ad-lab-screenshots/SecondRun.png)
 - Repeating the same wrong password only raised bad logon count to 3, so the account never locked. I instead used a different password each time to lock the account
 - Used Bastion so that neither VM needs a public IP and nothing is exposed to the internet
